@@ -21,7 +21,14 @@ class BulletCVC: UICollectionViewController {
     fileprivate var numberOfBullets = 0
     /// Current bullet index
     fileprivate var currentBullet = 0
+    /// Current bullet direction
+    private var currentDirection: BulletDirection = .down
     private let bulletIdentifier = "BulletCell"
+    
+    enum BulletDirection {
+        case up
+        case down
+    }
     
     // Compute Properties
     fileprivate var bulletWidth: CGFloat {
@@ -75,6 +82,12 @@ class BulletCVC: UICollectionViewController {
             addIndexes.append(bulletIndexPath)
         }
         self.collectionView!.insertItems(at: addIndexes)
+        // Re-positioning currentBullet
+        self.collectionView!.performBatchUpdates({
+            
+        }) {[weak self] (finished) in
+            self?.repositionToCurrentBullet()
+        }
     }
     
     
@@ -113,7 +126,7 @@ class BulletCVC: UICollectionViewController {
             return
         }
         let lastBullet = currentBullet
-        let nextOffset = calculateCurrentBulletOffset(currentBullet: index)
+        let nextOffset = calculateCurrentBulletOffset(currentBullet: index, direction: index < currentBullet ? .up : .down)
         self.collectionView!.setContentOffset(CGPoint(x: 0, y: nextOffset), animated: true)
         currentBullet = index
         
@@ -121,9 +134,14 @@ class BulletCVC: UICollectionViewController {
     }
     
     // Private Methods
-    private func calculateCurrentBulletOffset(currentBullet: Int) -> CGFloat {
-        // Floor the half of total number of bullet showing
-        let topOffset: CGFloat = CGFloat(floor(Double(totalBulletShowing) / 2.0)) * bulletOffset
+    private func calculateCurrentBulletOffset(currentBullet: Int, direction: BulletDirection) -> CGFloat {
+        // Calculate topOffset from total number of bullet showing, floor the half of bullets showing
+        var totalBulletsForOffset = floor(Double(totalBulletShowing) / 2.0)
+        if direction == .up { // Minus 1 bullet for direction UP
+            totalBulletsForOffset -= 1
+        }
+        currentDirection = direction // Save direction state for repositioning
+        let topOffset: CGFloat = CGFloat(totalBulletsForOffset) * bulletOffset
         // Calculate new offset
         var newBulletOffset: CGFloat = (CGFloat(currentBullet) * bulletOffset) - topOffset
         // Check the offset not overflow
@@ -133,6 +151,11 @@ class BulletCVC: UICollectionViewController {
     
     private func updateUI() {
         self.collectionView?.reloadData()
+    }
+    
+    private func repositionToCurrentBullet() {
+        let currentOffset = calculateCurrentBulletOffset(currentBullet: currentBullet, direction: currentDirection)
+        self.collectionView!.setContentOffset(CGPoint(x: 0, y: currentOffset), animated: true)
     }
     
     // MARK: - UICollectionViewDataSource
