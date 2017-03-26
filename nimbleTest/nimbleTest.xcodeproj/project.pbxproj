@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		980FEA361E860C470052D23D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FEA351E860C470052D23D /* NetworkManager.swift */; };
+		980FEA381E860CAF0052D23D /* NimbleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FEA371E860CAF0052D23D /* NimbleService.swift */; };
+		980FEA3A1E860EAD0052D23D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FEA391E860EAD0052D23D /* NetworkError.swift */; };
+		980FEA3C1E861B940052D23D /* NimbleAuthen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FEA3B1E861B940052D23D /* NimbleAuthen.swift */; };
+		983A35991E8682770028BE26 /* SurveyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A35981E8682770028BE26 /* SurveyListModel.swift */; };
+		983A359B1E868D2A0028BE26 /* JsonApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A359A1E868D2A0028BE26 /* JsonApiKey.swift */; };
+		983A35A11E86D5590028BE26 /* SurveyNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A35A01E86D5590028BE26 /* SurveyNC.swift */; };
+		983A35A31E86D6FB0028BE26 /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A35A21E86D6FB0028BE26 /* SurveyCell.swift */; };
+		983A35A51E86F3CA0028BE26 /* TakeSurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A35A41E86F3CA0028BE26 /* TakeSurveyVC.swift */; };
+		983A35A81E86F6CA0028BE26 /* SurveyQuestionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983A35A71E86F6CA0028BE26 /* SurveyQuestionTVCell.swift */; };
+		98E41A1D1E86813700A483BE /* SurveyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E41A1C1E86813700A483BE /* SurveyDataModel.swift */; };
+		98FCFB101E85894A00DF5568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FCFB0F1E85894A00DF5568 /* AppDelegate.swift */; };
+		98FCFB151E85894A00DF5568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FCFB131E85894A00DF5568 /* Main.storyboard */; };
+		98FCFB171E85894A00DF5568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FCFB161E85894A00DF5568 /* Assets.xcassets */; };
+		98FCFB1A1E85894A00DF5568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FCFB181E85894A00DF5568 /* LaunchScreen.storyboard */; };
+		98FCFB251E858C1700DF5568 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FCFB241E858C1700DF5568 /* Survey.storyboard */; };
+		98FCFB271E858C3700DF5568 /* SurveyListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FCFB261E858C3700DF5568 /* SurveyListVC.swift */; };
+		98FCFB331E8592E100DF5568 /* BulletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FCFB321E8592E100DF5568 /* BulletView.swift */; };
+		98FCFB351E85930F00DF5568 /* BulletCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FCFB341E85930F00DF5568 /* BulletCVC.swift */; };
+		98FCFB371E85938900DF5568 /* BulletCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FCFB361E85938900DF5568 /* BulletCVCell.swift */; };
+		98FCFB3C1E8598DD00DF5568 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FCFB3B1E8598DD00DF5568 /* UIColorExtension.swift */; };
+		BD94EAACF574D1740F4EECDF /* Pods_nimbleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D8843B519B5BCB432516F8 /* Pods_nimbleTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		017F84CDD83960B95B0E5569 /* Pods-nimbleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbleTest/Pods-nimbleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		980FEA351E860C470052D23D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Services/NetworkService/NetworkManager.swift; sourceTree = "<group>"; };
+		980FEA371E860CAF0052D23D /* NimbleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NimbleService.swift; path = Services/NetworkService/NimbleService.swift; sourceTree = "<group>"; };
+		980FEA391E860EAD0052D23D /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = Services/NetworkService/NetworkError.swift; sourceTree = "<group>"; };
+		980FEA3B1E861B940052D23D /* NimbleAuthen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NimbleAuthen.swift; path = Services/NetworkService/NimbleAuthen.swift; sourceTree = "<group>"; };
+		983A35981E8682770028BE26 /* SurveyListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyListModel.swift; path = Survey/SurveyListModel.swift; sourceTree = "<group>"; };
+		983A359A1E868D2A0028BE26 /* JsonApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonApiKey.swift; path = Services/NetworkService/JsonApiKey.swift; sourceTree = "<group>"; };
+		983A35A01E86D5590028BE26 /* SurveyNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyNC.swift; path = Survey/SurveyNC.swift; sourceTree = "<group>"; };
+		983A35A21E86D6FB0028BE26 /* SurveyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyCell.swift; path = Survey/CollectionViewCell/SurveyCell.swift; sourceTree = "<group>"; };
+		983A35A41E86F3CA0028BE26 /* TakeSurveyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakeSurveyVC.swift; path = Survey/TakeSurveyVC.swift; sourceTree = "<group>"; };
+		983A35A71E86F6CA0028BE26 /* SurveyQuestionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyQuestionTVCell.swift; path = Survey/TableViewCell/SurveyQuestionTVCell.swift; sourceTree = "<group>"; };
+		98E41A1C1E86813700A483BE /* SurveyDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyDataModel.swift; path = Survey/SurveyDataModel.swift; sourceTree = "<group>"; };
+		98FCFB0C1E85894A00DF5568 /* nimbleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FCFB0F1E85894A00DF5568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98FCFB141E85894A00DF5568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98FCFB161E85894A00DF5568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98FCFB191E85894A00DF5568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98FCFB1B1E85894A00DF5568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98FCFB241E858C1700DF5568 /* Survey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Survey.storyboard; path = Survey/Survey.storyboard; sourceTree = "<group>"; };
+		98FCFB261E858C3700DF5568 /* SurveyListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyListVC.swift; path = Survey/SurveyListVC.swift; sourceTree = "<group>"; };
+		98FCFB321E8592E100DF5568 /* BulletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletView.swift; path = CustomViews/BulletNavigationIndicator/BulletView.swift; sourceTree = "<group>"; };
+		98FCFB341E85930F00DF5568 /* BulletCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletCVC.swift; path = CustomViews/BulletNavigationIndicator/BulletCVC.swift; sourceTree = "<group>"; };
+		98FCFB361E85938900DF5568 /* BulletCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BulletCVCell.swift; path = CustomViews/BulletNavigationIndicator/BulletCVCell.swift; sourceTree = "<group>"; };
+		98FCFB3B1E8598DD00DF5568 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Utilities/Extension/UIColorExtension.swift; sourceTree = "<group>"; };
+		A8D8843B519B5BCB432516F8 /* Pods_nimbleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64DC9C65E1B1A2AF3ECA33A /* Pods-nimbleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbleTest/Pods-nimbleTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98FCFB091E85894900DF5568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD94EAACF574D1740F4EECDF /* Pods_nimbleTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7882FE3E2D263E622A78DAEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				017F84CDD83960B95B0E5569 /* Pods-nimbleTest.debug.xcconfig */,
+				B64DC9C65E1B1A2AF3ECA33A /* Pods-nimbleTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		980FEA321E860B500052D23D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				980FEA351E860C470052D23D /* NetworkManager.swift */,
+				980FEA371E860CAF0052D23D /* NimbleService.swift */,
+				980FEA3B1E861B940052D23D /* NimbleAuthen.swift */,
+				980FEA391E860EAD0052D23D /* NetworkError.swift */,
+				983A359A1E868D2A0028BE26 /* JsonApiKey.swift */,
+			);
+			name = NetworkService;
+			sourceTree = "<group>";
+		};
+		983A359D1E86B3800028BE26 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				983A35A21E86D6FB0028BE26 /* SurveyCell.swift */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		983A35A61E86F6960028BE26 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				983A35A71E86F6CA0028BE26 /* SurveyQuestionTVCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		98B274741E8608DD005FD895 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				980FEA321E860B500052D23D /* NetworkService */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		98FCFB031E85894900DF5568 = {
+			isa = PBXGroup;
+			children = (
+				98FCFB0E1E85894A00DF5568 /* nimbleTest */,
+				98FCFB0D1E85894A00DF5568 /* Products */,
+				7882FE3E2D263E622A78DAEE /* Pods */,
+				9C80ACE59048CE09A117B096 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98FCFB0D1E85894A00DF5568 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98FCFB0C1E85894A00DF5568 /* nimbleTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98FCFB0E1E85894A00DF5568 /* nimbleTest */ = {
+			isa = PBXGroup;
+			children = (
+				98FCFB221E858A1500DF5568 /* Survey */,
+				98B274741E8608DD005FD895 /* Services */,
+				98FCFB281E858D6900DF5568 /* CustomViews */,
+				98FCFB231E858A8800DF5568 /* Utilities */,
+				98FCFB0F1E85894A00DF5568 /* AppDelegate.swift */,
+				98FCFB131E85894A00DF5568 /* Main.storyboard */,
+				98FCFB211E8589A700DF5568 /* Supporting Files */,
+			);
+			path = nimbleTest;
+			sourceTree = "<group>";
+		};
+		98FCFB211E8589A700DF5568 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98FCFB161E85894A00DF5568 /* Assets.xcassets */,
+				98FCFB181E85894A00DF5568 /* LaunchScreen.storyboard */,
+				98FCFB1B1E85894A00DF5568 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98FCFB221E858A1500DF5568 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				983A35A61E86F6960028BE26 /* TableViewCell */,
+				983A359D1E86B3800028BE26 /* CollectionViewCell */,
+				98FCFB241E858C1700DF5568 /* Survey.storyboard */,
+				98FCFB261E858C3700DF5568 /* SurveyListVC.swift */,
+				983A35981E8682770028BE26 /* SurveyListModel.swift */,
+				98E41A1C1E86813700A483BE /* SurveyDataModel.swift */,
+				983A35A01E86D5590028BE26 /* SurveyNC.swift */,
+				983A35A41E86F3CA0028BE26 /* TakeSurveyVC.swift */,
+			);
+			name = Survey;
+			sourceTree = "<group>";
+		};
+		98FCFB231E858A8800DF5568 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				98FCFB381E85987A00DF5568 /* Extensions */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		98FCFB281E858D6900DF5568 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				98FCFB311E85917000DF5568 /* BulletNavigationIndicator */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		98FCFB311E85917000DF5568 /* BulletNavigationIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				98FCFB321E8592E100DF5568 /* BulletView.swift */,
+				98FCFB341E85930F00DF5568 /* BulletCVC.swift */,
+				98FCFB361E85938900DF5568 /* BulletCVCell.swift */,
+			);
+			name = BulletNavigationIndicator;
+			sourceTree = "<group>";
+		};
+		98FCFB381E85987A00DF5568 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				98FCFB3B1E8598DD00DF5568 /* UIColorExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9C80ACE59048CE09A117B096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8843B519B5BCB432516F8 /* Pods_nimbleTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98FCFB0B1E85894900DF5568 /* nimbleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FCFB1E1E85894A00DF5568 /* Build configuration list for PBXNativeTarget "nimbleTest" */;
+			buildPhases = (
+				1B65203BC8A40A179A243735 /* [CP] Check Pods Manifest.lock */,
+				98FCFB081E85894900DF5568 /* Sources */,
+				98FCFB091E85894900DF5568 /* Frameworks */,
+				98FCFB0A1E85894900DF5568 /* Resources */,
+				A52BFB543E322B91B5694A59 /* [CP] Embed Pods Frameworks */,
+				3A8FC373864A6F8BC8B7AE6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nimbleTest;
+			productName = nimbleTest;
+			productReference = 98FCFB0C1E85894A00DF5568 /* nimbleTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98FCFB041E85894900DF5568 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Lumos;
+				TargetAttributes = {
+					98FCFB0B1E85894900DF5568 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3VE67X6BS7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 98FCFB071E85894900DF5568 /* Build configuration list for PBXProject "nimbleTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98FCFB031E85894900DF5568;
+			productRefGroup = 98FCFB0D1E85894A00DF5568 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98FCFB0B1E85894900DF5568 /* nimbleTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98FCFB0A1E85894900DF5568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FCFB1A1E85894A00DF5568 /* LaunchScreen.storyboard in Resources */,
+				98FCFB171E85894A00DF5568 /* Assets.xcassets in Resources */,
+				98FCFB251E858C1700DF5568 /* Survey.storyboard in Resources */,
+				98FCFB151E85894A00DF5568 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B65203BC8A40A179A243735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A8FC373864A6F8BC8B7AE6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nimbleTest/Pods-nimbleTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A52BFB543E322B91B5694A59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nimbleTest/Pods-nimbleTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98FCFB081E85894900DF5568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FCFB271E858C3700DF5568 /* SurveyListVC.swift in Sources */,
+				98FCFB101E85894A00DF5568 /* AppDelegate.swift in Sources */,
+				98FCFB371E85938900DF5568 /* BulletCVCell.swift in Sources */,
+				980FEA3C1E861B940052D23D /* NimbleAuthen.swift in Sources */,
+				98E41A1D1E86813700A483BE /* SurveyDataModel.swift in Sources */,
+				980FEA361E860C470052D23D /* NetworkManager.swift in Sources */,
+				98FCFB351E85930F00DF5568 /* BulletCVC.swift in Sources */,
+				983A35991E8682770028BE26 /* SurveyListModel.swift in Sources */,
+				98FCFB331E8592E100DF5568 /* BulletView.swift in Sources */,
+				983A35A51E86F3CA0028BE26 /* TakeSurveyVC.swift in Sources */,
+				983A35A81E86F6CA0028BE26 /* SurveyQuestionTVCell.swift in Sources */,
+				983A35A31E86D6FB0028BE26 /* SurveyCell.swift in Sources */,
+				980FEA3A1E860EAD0052D23D /* NetworkError.swift in Sources */,
+				980FEA381E860CAF0052D23D /* NimbleService.swift in Sources */,
+				98FCFB3C1E8598DD00DF5568 /* UIColorExtension.swift in Sources */,
+				983A35A11E86D5590028BE26 /* SurveyNC.swift in Sources */,
+				983A359B1E868D2A0028BE26 /* JsonApiKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98FCFB131E85894A00DF5568 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FCFB141E85894A00DF5568 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98FCFB181E85894A00DF5568 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FCFB191E85894A00DF5568 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98FCFB1C1E85894A00DF5568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98FCFB1D1E85894A00DF5568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98FCFB1F1E85894A00DF5568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017F84CDD83960B95B0E5569 /* Pods-nimbleTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VE67X6BS7;
+				INFOPLIST_FILE = nimbleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lumos.app.nimbleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		98FCFB201E85894A00DF5568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64DC9C65E1B1A2AF3ECA33A /* Pods-nimbleTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VE67X6BS7;
+				INFOPLIST_FILE = nimbleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lumos.app.nimbleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98FCFB071E85894900DF5568 /* Build configuration list for PBXProject "nimbleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FCFB1C1E85894A00DF5568 /* Debug */,
+				98FCFB1D1E85894A00DF5568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FCFB1E1E85894A00DF5568 /* Build configuration list for PBXNativeTarget "nimbleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FCFB1F1E85894A00DF5568 /* Debug */,
+				98FCFB201E85894A00DF5568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98FCFB041E85894900DF5568 /* Project object */;
+}
