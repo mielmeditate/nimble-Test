@@ -101,6 +101,7 @@ class SurveyListVC: UIViewController {
     // MARK: - Custom Actions
     @objc private func clickMenu(_ sender: UIButton) {
         print("Click menu: \(sender)")
+        // fetchNextPageSurvey() // Testing purpose
     }
     
     // MARK: - Methods
@@ -117,6 +118,7 @@ class SurveyListVC: UIViewController {
         }
         cv_survey.insertItems(at: addIndexes)
         bulletIndicator?.addBullets(addingTotal: surveyListArray.count)
+        print("Current total surveys = \(surveyListData.count)")
     }
     
     fileprivate func fetchNextPageSurvey() {

@@ -44,6 +44,42 @@ class NetworkManager {
             tasks.forEach { $0.cancel() }
         }
     }
+    
+    // Just do some research for request retrier, not working for now
+    private static let lock = NSLock()
+    private static var requestsToRetry: [(NetworkRequestCall, NetworkResponseCallback)] = []
+    private static var isRefreshing = false
+    
+    static func requestRetrier(requestCall: @escaping NetworkRequestCall, responseCallback: @escaping NetworkResponseCallback) {
+        lock.lock() ; defer { lock.unlock() }
+        print("Start request retrier")
+        requestsToRetry.append((requestCall, responseCallback))
+        if !isRefreshing && requestsToRetry.count > 0 {
+            isRefreshing = true
+            NimbleAuthen.sharedInstance.refreshToken(onComplete: { (success) in
+                self.lock.lock() ; defer { self.lock.unlock() }
+                
+                if success {
+                    // Call services again
+                    self.requestsToRetry.forEach{ (request: (NetworkRequestCall, NetworkResponseCallback)) in
+                        let (retryRequest, onComplete) = request
+                        retryRequest{ (value2, error2) in
+                            onComplete(value2, error2)
+                        }
+                    }
+                }else {
+                    // Refresh token failed, forward authorization failed message
+                    self.requestsToRetry.forEach{ (request: (NetworkRequestCall, NetworkResponseCallback)) in
+                        let (_, onComplete) = request
+                        onComplete(nil, .authorizationFailed)
+                    }
+                }
+                self.requestsToRetry.removeAll()
+                isRefreshing = false
+                print("Finish request retrier")
+            })
+        }
+    }
 }
 
 // MARK: - Attributes Declaration
